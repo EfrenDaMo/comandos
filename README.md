@@ -114,10 +114,12 @@ o
 ```
 Router(config)#int {int} {num}
 ```
+
 * int:
     - Fa: FastEthernet
     - Gi: GigabitEthernet
     - Se: Serial
+    - Lo: Loopback
 * num:
     - n/0: Se usa para FastEthernet/GigabitEthernet
         - n: Numero de puerto
@@ -128,3 +130,34 @@ Router(config)#int {int} {num}
         - x: Numero del slot donde se encuentra colocado
         - n: Numero de puerto
 
+### Asignación de ip a interfaz:
+
+```
+Router(config)#ip address {ip} {mascara-de-subred}
+```
+
+### Activación de puerto:
+
+```
+Router(config)#no shutdown
+```
+
+## Verificación de conexion:
+
+### Ping a otra maquina:
+
+```
+Router(config)#ping {ip}
+```
+
+### Trazar ruta a otra maquina:
+
+```
+Router(config)#traceroute {ip}
+```
+
+### Mostrar interfaces breve:
+
+```
+Router(config)#show ip route brief
+```
