@@ -81,25 +81,25 @@ Router(config)#banner motd # ... #
 ### Mostrar configuración actual:
 
 ```
-Router(config)#show running-config
+Router#show running-config
 ```
 
 ### Hacer configuración actual a configuracion de inicio:
 
 ```
-Router(config)#copy running-config startup-config
+Router#copy running-config startup-config
 ```
 
 ### Restaurar configuración de inicio:
 
 ```
-Router(config)#reload
+Router#reload
 ```
 
 ### Eliminar configuración de inicio:
 
 ```
-Router(config)#erase startup-config
+Router#erase startup-config
 ```
 
 ## Configuración de interfaces:
